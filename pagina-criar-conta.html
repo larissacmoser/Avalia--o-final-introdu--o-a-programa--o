@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Criar conta</title>
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
+  <body>
+    <!--Lado esquerdo - imagem -->
+    <section>
+      <img class="img-front" src="./assets/img1.jpg" alt="" />
+    </section>
+    <!--Lado direito - formulário e botões -->
+
+    <section>
+      <div class="center div-one">
+        <h1
+          class="primary"
+          style="text-align: center; position: relative; top: 100px"
+        >
+          CRIAR CONTA
+        </h1>
+        <br />
+        <br />
+        <input
+          class="input-class"
+          type="text"
+          placeholder="User name"
+          style="display: flex; position: relative; top: 200px; left: 5px"
+          id="ipt-user"
+          onchange="toValidateUser()"
+        />
+        <input
+          class="input-class"
+          type="password"
+          placeholder="Password"
+          style="display: flex; position: relative; top: 210px; left: 5px"
+          id="ipt-password-1"
+          onchange="toValidatePassword1()"
+        />
+        <input
+          class="input-class"
+          type="password"
+          placeholder="Repeat password"
+          style="display: flex; position: relative; top: 220px; left: 5px"
+          id="ipt-password-2"
+          onchange="toValidatePassword2()"
+        />
+        <a
+          style="position: relative; top: 230px; left: 5px; cursor: pointer"
+          class="btn-green"
+          id="link-account"
+          onclick="createAccount()"
+          >CRIAR CONTA AGORA</a
+        >
+      </div>
+    </section>
+    <script src="./script.js"></script>
+  </body>
+</html>

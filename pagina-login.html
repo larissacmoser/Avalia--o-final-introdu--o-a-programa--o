@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Página de login</title>
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
+  <body style="display: flex">
+    <!--Lado esquerdo - imagem -->
+    <section>
+      <img class="img-front" src="./assets/img1.jpg" alt="" />
+    </section>
+    <!--Lado direito - formulário e botões -->
+
+    <section>
+      <div class="div-one">
+        <h1
+          class="primary"
+          style="text-align: center; position: relative; top: 100px"
+        >
+          ENTRAR NO SISTEMA DE RECADOS
+        </h1>
+        <br />
+        <br />
+        <input
+          style="position: relative; top: 200px; left: 5px"
+          class="input-class"
+          type="text"
+          placeholder="User name"
+          id="ipt-user-log"
+        />
+        <input
+          style="position: relative; top: 200px; left: 10px"
+          class="input-class"
+          type="password"
+          placeholder="Password"
+          id="ipt-pass-log"
+        />
+        <div
+          style="
+            position: relative;
+            top: 215px;
+            margin-left: 8px;
+            color: #666666;
+            justify-content: center;
+            margin-bottom: 0px;
+            align-items: center;
+          "
+        ></div>
+        <a
+          style="position: relative; top: 230px; left: 10px; cursor: pointer"
+          class="btn-green"
+          onclick="login()"
+          id="btn-log"
+          >ENTRAR</a
+        >
+        <a
+          href="./pagina-criar-conta.html"
+          style="
+            color: rgb(0, 184, 230);
+            text-decoration: none;
+            position: relative;
+            top: 250px;
+            left: 150px;
+          "
+        >
+          CRIAR CONTA
+        </a>
+      </div>
+    </section>
+    <script src="./script.js"></script>
+  </body>
+</html>

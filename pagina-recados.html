@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Página de recados</title>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <header>
+      <h1 style="padding-top: 30px; padding-left: 30px">Meus recados</h1>
+      <input
+        type="text"
+        style="margin-left: 30px; margin-top: 30px; width: 400px"
+        class="input-class"
+        placeholder="Descrição"
+        id="input1"
+      />
+      <input
+        type="text"
+        class="input-class"
+        style="margin-left: 30px; width: 500px"
+        placeholder="Detalhamento"
+        id="input2"
+      />
+      <button
+        id="btnSave"
+        style="
+          padding: 10px;
+          border-radius: 5px;
+          border-color: grey;
+          background-color: rgb(0, 162, 255);
+          color: white;
+        "
+        onclick="toSaveNotes()"
+        ;
+      >
+        Salvar
+      </button>
+      <button
+        style="
+          padding: 10px;
+          border-radius: 5px;
+          border-color: grey;
+          background-color: rgb(0, 162, 255);
+          color: white;
+        "
+        onclick="toCleanBtn()"
+        ;
+      >
+        Limpar
+      </button>
+      <button
+        style="
+          padding: 10px;
+          border-radius: 5px;
+          border-color: grey;
+          background-color: grey;
+          color: white;
+        "
+        onclick="toLogout()"
+        ;
+      >
+        Logout
+      </button>
+    </header>
+    <br />
+    <br />
+    <main>
+      <table id="table-id">
+        <thead>
+          <tr id="row1">
+            <th>#</th>
+            <th>Descrição</th>
+            <th>Detalhamento</th>
+            <th>Ação</th>
+          </tr>
+        </thead>
+        <tbody id="list"></tbody>
+      </table>
+    </main>
+    <script src="./script.js"></script>
+  </body>
+</html>
